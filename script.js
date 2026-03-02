@@ -206,16 +206,18 @@ $(document).ready(function () {
             // Your WhatsApp Number (Include country code, e.g., 94 for Sri Lanka)
             let whatsappNumber = "94770833202"; // REPLACE THIS NUMBER WITH YOURS
 
-            // WhatsApp Link
-            let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+            // WhatsApp Link (Universal fallback using api.whatsapp.com instead of wa.me for better mobile compatibility)
+            let whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
 
-            $(this).fadeOut(500, function () {
-                $("#rsvp-success").removeClass('hidden').hide().fadeIn(800);
+            // Show success animation
+            $(this).fadeOut(400, function () {
+                $("#rsvp-success").removeClass('hidden').hide().fadeIn(600);
                 if (checkAnimation) checkAnimation.play();
 
                 // Fire beautiful confetti
                 if (typeof confetti !== 'undefined') {
-                    var duration = 3000;
+                    // Confetti code...
+                    var duration = 2500;
                     var end = Date.now() + duration;
 
                     (function frame() {
@@ -240,10 +242,11 @@ $(document).ready(function () {
                     }());
                 }
 
-                // Open WhatsApp after a short delay so they see the success animation
+                // Redirect dynamically for mobile popup-blocker safety
                 setTimeout(() => {
-                    window.open(whatsappURL, '_blank');
-                }, 1200);
+                    // Use location.href instead of window.open to guarantee mobile redirect
+                    window.location.href = whatsappURL;
+                }, 1500);
             });
 
         } catch (error) {

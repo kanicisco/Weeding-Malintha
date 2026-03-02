@@ -113,8 +113,8 @@
             <p class="text-xs md:text-sm tracking-[0.4em] uppercase mb-6 font-light text-gold">We Invite You To
                 Celebrate</p>
             <h1
-                class="name-animate inline-block text-6xl md:text-8xl lg:text-9xl font-script text-white mb-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-                Sumudu <span class="text-gold">&</span> Malintha</h1>
+                class="name-animate inline-block text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-script text-white mb-2 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] leading-tight">
+                Sumudu <br class="sm:hidden"><span class="text-gold">&</span> <br class="sm:hidden">Malintha</h1>
 
             <div class="flex items-center justify-center gap-4 my-8 opacity-80">
                 <div class="h-px w-16 bg-gradient-to-r from-transparent to-gold"></div>
@@ -159,30 +159,32 @@
             class="max-w-5xl mx-auto gs-reveal relative z-10 glass-panel rounded-3xl p-8 md:p-16 border border-white shadow-glass">
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-script text-gold mb-10">Waiting for the Magic</h2>
 
-            <div class="flex flex-wrap justify-center gap-4 md:gap-8 font-serif" id="countdown">
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-8 font-serif" id="countdown">
                 <div
-                    class="circle-blink countdown-box flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
-                    <span class="text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="days">00</span>
+                    class="circle-blink countdown-box flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="days">00</span>
                     <span
-                        class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Days</span>
+                        class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Days</span>
                 </div>
                 <div
-                    class="circle-blink countdown-box flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
-                    <span class="text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="hours">00</span>
+                    class="circle-blink countdown-box flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="hours">00</span>
                     <span
-                        class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Hours</span>
+                        class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Hours</span>
                 </div>
                 <div
-                    class="circle-blink countdown-box flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
-                    <span class="text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="minutes">00</span>
+                    class="circle-blink countdown-box flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-darkgold mb-1 countdown-val"
+                        id="minutes">00</span>
                     <span
-                        class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Mins</span>
+                        class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Mins</span>
                 </div>
                 <div
-                    class="circle-blink countdown-box flex flex-col items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
-                    <span class="text-3xl md:text-5xl text-darkgold mb-1 countdown-val" id="seconds">00</span>
+                    class="circle-blink countdown-box flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-white/60 backdrop-blur-md rounded-full border-2 transform transition duration-500 hover:-translate-y-2">
+                    <span class="text-2xl sm:text-3xl md:text-5xl text-darkgold mb-1 countdown-val"
+                        id="seconds">00</span>
                     <span
-                        class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Secs</span>
+                        class="text-[9px] sm:text-[10px] md:text-xs tracking-[0.2em] uppercase text-textlight font-sans font-medium">Secs</span>
                 </div>
             </div>
         </div>
@@ -253,12 +255,12 @@
                         <i class="fas fa-ring text-white group-hover:text-gold transition-colors duration-500"></i>
                     </div>
                     <div
-                        class="order-1 bg-pastelpink/50 rounded-br-3xl rounded-tl-3xl shadow-sm hover:shadow-xl hover:bg-white w-full md:w-5/12 px-8 py-8 transform transition-all duration-500 hover:-translate-y-2 border border-gray-100 relative">
+                        class="order-1 bg-pastelpink/50 rounded-br-3xl rounded-tl-3xl shadow-sm hover:shadow-xl hover:bg-white w-full md:w-5/12 p-6 md:p-8 transform transition-all duration-500 hover:-translate-y-2 border border-gray-100 relative mt-4 md:mt-0">
                         <div class="absolute -top-3 -left-3 text-5xl text-gold/20 font-serif">"</div>
                         <span
                             class="text-xs text-gold uppercase tracking-[0.2em] border-b border-gold/30 pb-1 inline-block mb-4 font-semibold">February
                             14, 2025</span>
-                        <h3 class="mb-3 font-serif font-bold text-textdark text-3xl">The Proposal</h3>
+                        <h3 class="mb-3 font-serif font-bold text-textdark text-2xl md:text-3xl">The Proposal</h3>
                         <p class="text-sm leading-relaxed text-textlight font-light">He got down on one knee in front of
                             the Eiffel Tower in Paris as the lights sparkled, and it was the easiest "Yes!" ever.</p>
                     </div>
@@ -320,7 +322,7 @@
                                 Nattarampotha</p>
                         </div>
                         <a href="https://maps.app.goo.gl/EqofbmamoTJ1S4jg7" target="_blank"
-                            class="inline-block px-12 py-4 bg-transparent text-gold border border-gold hover:bg-gold hover:text-white transition-all duration-300 tracking-[0.2em] text-sm font-semibold uppercase shadow-sm">View
+                            class="inline-block px-8 py-3 md:px-12 md:py-4 bg-transparent text-gold border border-gold hover:bg-gold hover:text-white transition-all duration-300 tracking-[0.2em] text-xs md:text-sm font-semibold uppercase shadow-sm">View
                             Map</a>
                     </div>
                 </div>
@@ -362,41 +364,42 @@
 
             <!-- Glassmorphism Form Container -->
             <div
-                class="rounded-3xl p-8 md:p-12 shadow-glass-dark text-white border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden">
+                class="rounded-3xl p-6 md:p-12 shadow-glass-dark text-white border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden">
 
                 <!-- Success State -->
                 <div id="rsvp-success" class="hidden text-center py-10 relative z-20">
-                    <div id="lottie-success" class="w-48 h-48 mx-auto mb-2 drop-shadow-lg"></div>
-                    <h3 class="text-5xl font-script text-gold mb-4">Thank You!</h3>
-                    <p class="text-gray-300 font-light text-lg px-4 tracking-wide">Your response has been engraved in
+                    <div id="lottie-success" class="w-32 h-32 md:w-48 md:h-48 mx-auto mb-2 drop-shadow-lg"></div>
+                    <h3 class="text-4xl md:text-5xl font-script text-gold mb-4">Thank You!</h3>
+                    <p class="text-gray-300 font-light text-base md:text-lg px-2 md:px-4 tracking-wide">Your response
+                        has been engraved in
                         our hearts. See you soon!</p>
                 </div>
 
                 <!-- RSVP Form -->
-                <form id="rsvp-form" class="space-y-8 relative z-20">
+                <form id="rsvp-form" class="space-y-6 md:space-y-8 relative z-20">
                     <div class="relative group">
                         <label
                             class="absolute text-xs font-semibold -top-3 left-4 bg-weddingdark px-2 text-gold tracking-widest uppercase z-10">Full
                             Name(s)</label>
                         <input type="text" id="guest-name" required
-                            class="w-full px-6 py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 text-white placeholder-gray-600 relative z-0"
+                            class="w-full px-4 py-3 md:px-6 md:py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 text-white placeholder-gray-600 relative z-0"
                             placeholder="E.g. John & Jane Doe">
                     </div>
 
-                    <div class="grid md:grid-cols-2 gap-8">
+                    <div class="grid md:grid-cols-2 gap-6 md:gap-8">
                         <div class="relative">
                             <label
                                 class="absolute text-xs font-semibold -top-3 left-4 bg-weddingdark px-2 text-gold tracking-widest uppercase z-10">Will
                                 you attend?</label>
                             <div class="relative">
                                 <select id="attendance" required
-                                    class="w-full px-6 py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 appearance-none cursor-pointer text-white">
+                                    class="w-full px-4 py-3 md:px-6 md:py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 appearance-none cursor-pointer text-white">
                                     <option value="" disabled selected class="text-gray-800">Select an option</option>
                                     <option value="attending" class="text-gray-800">Joyfully Accept</option>
                                     <option value="not_attending" class="text-gray-800">Regretfully Decline</option>
                                 </select>
                                 <div
-                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-gold">
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 md:px-5 text-gold">
                                     <i class="fas fa-chevron-down text-sm"></i>
                                 </div>
                             </div>
@@ -407,14 +410,14 @@
                                 Preference</label>
                             <div class="relative">
                                 <select id="food-pref"
-                                    class="w-full px-6 py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 appearance-none cursor-pointer text-white">
+                                    class="w-full px-4 py-3 md:px-6 md:py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 appearance-none cursor-pointer text-white">
                                     <option value="none" selected class="text-gray-800">No specific preference</option>
                                     <option value="vegetarian" class="text-gray-800">Vegetarian</option>
                                     <option value="vegan" class="text-gray-800">Vegan</option>
                                     <option value="halal" class="text-gray-800">Halal / Kosher</option>
                                 </select>
                                 <div
-                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-5 text-gold">
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 md:px-5 text-gold">
                                     <i class="fas fa-chevron-down text-sm"></i>
                                 </div>
                             </div>
@@ -426,12 +429,12 @@
                             class="absolute text-xs font-semibold -top-3 left-4 bg-weddingdark px-2 text-gold tracking-widest uppercase z-10">Song
                             Request (Optional)</label>
                         <input type="text" id="song-req"
-                            class="w-full px-6 py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 text-white placeholder-gray-600"
+                            class="w-full px-4 py-3 md:px-6 md:py-4 bg-transparent border border-gray-600 rounded-xl focus:border-gold focus:ring-1 focus:ring-gold outline-none transition-all duration-300 text-white placeholder-gray-600"
                             placeholder="What song will get you dancing?">
                     </div>
 
                     <button type="submit"
-                        class="w-full bg-gold hover:bg-darkgold text-white font-serif font-bold text-xl py-4 rounded-xl transition-all duration-500 mt-4 tracking-widest uppercase shadow-[0_5px_15px_rgba(212,175,55,0.3)] hover:shadow-[0_5px_25px_rgba(212,175,55,0.6)] flex items-center justify-center gap-3 overflow-hidden group">
+                        class="w-full bg-gold hover:bg-darkgold text-white font-serif font-bold text-lg md:text-xl py-4 rounded-xl transition-all duration-500 mt-4 tracking-widest uppercase shadow-[0_5px_15px_rgba(212,175,55,0.3)] hover:shadow-[0_5px_25px_rgba(212,175,55,0.6)] flex items-center justify-center gap-3 overflow-hidden group">
                         <span class="relative z-10 transition-transform duration-300 group-hover:-translate-x-2">Confirm
                             RSVP</span>
                         <i
