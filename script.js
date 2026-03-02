@@ -21,9 +21,8 @@ $(document).ready(function () {
         audio.volume = 0.3;
     }
 
-    playBtn.click(function () {
+    function togglePlay() {
         if (!audio) return;
-
         if (isPlaying) {
             audio.pause();
             icon.removeClass("fa-pause").addClass("fa-music").addClass("fa-beat");
@@ -34,10 +33,30 @@ $(document).ready(function () {
                 icon.removeClass("fa-music").addClass("fa-pause");
                 isPlaying = true;
             }).catch(e => {
-                console.error("Audio playback failed:", e);
+                console.warn("Audio playback blocked by browser:", e);
             });
         }
-    });
+    }
+
+    playBtn.click(togglePlay);
+
+    // Attempt Auto-Play on load and on first user interaction
+    function attemptAutoPlay() {
+        if (!audio || isPlaying) return;
+        audio.play().then(() => {
+            icon.removeClass("fa-music").addClass("fa-pause");
+            isPlaying = true;
+            // Remove the event listeners once successfully playing
+            $("body").off("click touchstart scroll", attemptAutoPlay);
+        }).catch(e => {
+            console.warn("Auto-play prevented by browser. Waiting for user interaction.");
+        });
+    }
+
+    // Try immediately
+    setTimeout(attemptAutoPlay, 1000);
+    // Bind to first interaction if immediate play is blocked (Browsers usually block audio without interaction)
+    $("body").on("click touchstart scroll", attemptAutoPlay);
 
     // --- 3. Scroll to Content ---
     $("#scroll-down").click(function () {
